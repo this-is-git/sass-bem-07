@@ -1,0 +1,55 @@
+.container {
+  max-width: 1185px;
+  width: 100%;
+  padding: 0 30px;
+  margin: 0 auto;
+}
+
+.title {
+  @extend %roboto-700;
+  text-align: center;
+}
+
+@mixin transition($property, $duration: 250ms, $cubic: linear) {
+  // transition-property: $property;
+  // transition-timing-function: $cubic;
+  // transition-duration: $duration;
+  transition: $property $duration $cubic;
+  transition: $property $duration $cubic;
+}
+
+%style-after::after {
+  content: "";
+  position: absolute;
+  width: 1%;
+  display: inline-block;
+  height: 3px;
+  background-color: transparent;
+  bottom: 0;
+  right: 0;
+  transition: background-color 230ms linear, width 250ms ease;
+}
+
+%hover-link:hover::after,
+%hover-link:focus::after {
+  background-color: rgb(248, 244, 5);
+  width: 100%;
+}
+
+@mixin flex(
+  $justify-content: center,
+  $align-items: center,
+  $display: flex,
+  $flex-direction: row
+) {
+  justify-content: $justify-content;
+  align-items: $align-items;
+  display: $display;
+  flex-direction: $flex-direction;
+}
+
+%roboto-700 {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.2;
+}

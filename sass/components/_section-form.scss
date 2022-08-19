@@ -1,0 +1,20 @@
+.form {
+  background-color: rgb(73, 70, 70);
+}
+
+.form__container {
+  padding: 20px;
+  max-width: 400px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.form__label {
+  display: flex;
+  flex-direction: column;
+}
+
+.form__btn {
+  margin-top: 15px;
+  width: 100%;
+}

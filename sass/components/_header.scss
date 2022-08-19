@@ -1,0 +1,55 @@
+.header {
+  background-color: $bg-color;
+  padding: 20px 0;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.header__inner,
+.header__menu {
+  display: flex;
+  align-items: center;
+}
+
+.heder__logo {
+  margin-right: 180px;
+  font-size: 25px;
+  letter-spacing: 1px;
+}
+
+.logo__decor {
+  font-size: 40px;
+  color: pink;
+}
+
+.logo__decor {
+  .logo__decor + & {
+    color: rgb(235, 152, 0);
+    font-size: 35px;
+  }
+}
+
+.menu__item {
+  .menu__item + & {
+    margin-left: 25px;
+  }
+}
+
+.contacts__item {
+  .contacts__item + & {
+    margin-left: 25px;
+  }
+}
+
+.menu__link,
+.contacts__link {
+  position: relative;
+  padding-bottom: 5px;
+  @extend %style-after;
+  @extend %hover-link;
+}
+
+.header__contacts {
+  @include flex();
+  margin-left: auto;
+}

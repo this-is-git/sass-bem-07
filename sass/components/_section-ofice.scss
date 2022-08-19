@@ -1,0 +1,21 @@
+.ofice {
+  padding: 30px 0;
+}
+
+.ofice__title {
+  color: $accent-color;
+}
+
+.ofice__photos {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.ofice-photos__img {
+  width: 300px;
+  height: 300px;
+  background-color: rgba(27, 26, 26, 0.541);
+}

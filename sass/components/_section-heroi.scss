@@ -1,0 +1,20 @@
+.heroi {
+  padding: 30px 0;
+  background-color: rgba(189, 189, 179, 0.637);
+}
+
+.heroi__title {
+  @extend %roboto-700;
+  color: $accent-color;
+}
+
+.team__list {
+  display: flex;
+}
+
+.heroi__subtitle {
+  margin-top: 15px;
+  text-align: center;
+  color: $accent-color;
+  font-size: 20px;
+}

@@ -1,0 +1,38 @@
+.clients {
+  padding: 30px 0;
+  background-color: rgba(22, 22, 22, 0.925);
+}
+
+.clients__title {
+  margin-bottom: 20px;
+}
+
+.clients__list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.clients-list__logo {
+  fill: $main-color;
+  transition: fill 250ms linear;
+}
+
+.clients-list__link {
+  width: 100px;
+  min-height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #fff;
+  border-radius: 25px;
+  transition: border 250ms linear;
+}
+
+.clients-list__link {
+  &:hover {
+    border: 2px solid aqua;
+    .clients-list__logo {
+      fill: aqua;
+    }
+  }
+}

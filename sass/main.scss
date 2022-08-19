@@ -1,0 +1,31 @@
+@import "./base/fonts";
+@import "./base/normalize";
+@import "./base/reset";
+@import "./utils/vars";
+@import "./utils/mixins";
+@import "./utils/comon";
+@import "./components/header";
+@import "./components/section-heroi";
+@import "./components/section-team";
+@import "./components/section-clients";
+@import "./components/section-ofice";
+@import "./components/section-form";
+@import "./components/footer";
+
+body {
+  color: $main-color;
+  font-size: 16px;
+  font-family: $roboto;
+}
+
+/* heroi */
+
+/* team */
+
+/* clients */
+
+/* ofice */
+
+/* form */
+
+/* footer */
